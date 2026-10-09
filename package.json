@@ -1,0 +1,28 @@
+{
+  "name": "playwright-laya-healer",
+  "version": "1.0.0",
+  "description": "Self-healing Playwright locators: a free local decision model (Laya, Jev-compatible) fixes simple breaks, verifies them, and hands hard cases to the Playwright healer agent (Claude)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test:all": "playwright test",
+    "test:e2e": "playwright test --project=toolshop-e2e",
+    "test:api": "playwright test --project=toolshop-api",
+    "test:mock": "playwright test --project=toolshop-mock",
+    "test:visual": "playwright test --project=toolshop-e2e --grep @visual",
+    "test:visual:update_snapshot": "playwright test --project=toolshop-e2e --grep @visual --update-snapshots",
+    "heal": "node agent/heal.ts",
+    "lint": "eslint .",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.6.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-playwright": "^2.1.0",
+    "typescript": "^5.7.0"
+  }
+}

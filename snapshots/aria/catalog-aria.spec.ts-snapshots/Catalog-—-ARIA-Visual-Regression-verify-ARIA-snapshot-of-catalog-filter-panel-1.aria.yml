@@ -1,0 +1,85 @@
+- heading "Sort" [level=4]
+- separator
+- combobox "sort":
+  - option [selected]
+  - option "Name (A - Z)"
+  - option "Name (Z - A)"
+  - option "Price (High - Low)"
+  - option "Price (Low - High)"
+  - option "CO₂ Rating (A - E)"
+  - option "CO₂ Rating (E - A)"
+- heading "Price Range" [level=4]
+- separator
+- slider "ngx-slider"
+- slider "ngx-slider-max"
+- text: /0 \d+ 1 \d+/
+- heading "Search" [level=4]
+- separator
+- text: Search
+- textbox "Search"
+- button "X"
+- button "Search"
+- heading "Filters" [level=4]
+- separator
+- heading "By category:" [level=4]
+- group "Categories":
+  - text: ""
+  - checkbox "Hand Tools"
+  - text: Hand Tools
+  - list:
+    - group "Categories":
+      - text: ""
+      - checkbox "Hammer"
+      - text: Hammer
+      - checkbox "Hand Saw"
+      - text: Hand Saw
+      - checkbox "Wrench"
+      - text: Wrench
+      - checkbox "Screwdriver"
+      - text: Screwdriver
+      - checkbox "Pliers"
+      - text: Pliers
+      - checkbox "Chisels"
+      - text: Chisels
+      - checkbox "Measures"
+      - text: Measures
+  - checkbox "Power Tools"
+  - text: Power Tools
+  - list:
+    - group "Categories":
+      - text: ""
+      - checkbox "Grinder"
+      - text: Grinder
+      - checkbox "Sander"
+      - text: Sander
+      - checkbox "Saw"
+      - text: Saw
+      - checkbox "Drill"
+      - text: Drill
+  - checkbox "Other"
+  - text: Other
+  - list:
+    - group "Categories":
+      - text: ""
+      - checkbox "Tool Belts"
+      - text: Tool Belts
+      - checkbox "Storage Solutions"
+      - text: Storage Solutions
+      - checkbox "Workbench"
+      - text: Workbench
+      - checkbox "Safety Gear"
+      - text: Safety Gear
+      - checkbox "Fasteners"
+      - text: Fasteners
+- heading "By brand:" [level=4]
+- group "Brands":
+  - text: ""
+  - checkbox "ForgeFlex Tools"
+  - text: ForgeFlex Tools
+  - checkbox "MightyCraft Hardware"
+  - text: MightyCraft Hardware
+- heading "Sustainability:" [level=4]
+- group "Eco-Friendly Products":
+  - text: ""
+  - checkbox "Show only eco-friendly products"
+  - text: Show only eco-friendly products

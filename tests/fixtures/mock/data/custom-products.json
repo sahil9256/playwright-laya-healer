@@ -1,0 +1,114 @@
+{
+  "current_page": 1,
+  "data": [
+    {
+      "id": "mock-prod-001",
+      "name": "Super Wiertarka Udarowa 2500W (Zestaw XXL)",
+      "description": "Niezwykle mocna wiertarka udarowa z zestawem wierteł diamentowych i walizką.",
+      "price": 199.99,
+      "is_location_offer": false,
+      "is_rental": false,
+      "co2_rating": "A",
+      "in_stock": true,
+      "is_eco_friendly": true,
+      "product_image": {
+        "id": "img-01",
+        "by_name": "Testsmith",
+        "file_name": "drill01.avif",
+        "title": "Drill"
+      },
+      "category": {
+        "id": "mock-cat-01",
+        "name": "Power Tools",
+        "slug": "power-tools"
+      },
+      "brand": {
+        "id": "mock-brand-01",
+        "name": "ForgeFlex Tools"
+      }
+    },
+    {
+      "id": "mock-prod-002",
+      "name": "Zestaw Kluczy Precyzyjnych Pro",
+      "description": "Zestaw profesjonalnych kluczy nasadowych z powłoką antykorozyjną.",
+      "price": 49.5,
+      "is_location_offer": false,
+      "is_rental": false,
+      "co2_rating": "B",
+      "in_stock": false,
+      "is_eco_friendly": false,
+      "product_image": {
+        "id": "img-02",
+        "by_name": "Testsmith",
+        "file_name": "pliers01.avif",
+        "title": "Pliers"
+      },
+      "category": {
+        "id": "mock-cat-02",
+        "name": "Hand Tools",
+        "slug": "hand-tools"
+      },
+      "brand": {
+        "id": "mock-brand-02",
+        "name": "MightyCraft Hardware"
+      }
+    },
+    {
+      "id": "mock-prod-003",
+      "name": "Mikro Śrubka Precyzyjna M2",
+      "description": "Pojedyncza ultra-precyzyjna śrubka.",
+      "price": 0.01,
+      "is_location_offer": false,
+      "is_rental": false,
+      "co2_rating": "A",
+      "in_stock": true,
+      "is_eco_friendly": true,
+      "product_image": {
+        "id": "img-03",
+        "by_name": "Testsmith",
+        "file_name": "pliers02.avif",
+        "title": "Screws"
+      },
+      "category": {
+        "id": "mock-cat-03",
+        "name": "Other",
+        "slug": "other"
+      },
+      "brand": {
+        "id": "mock-brand-03",
+        "name": "ProScrews"
+      }
+    },
+    {
+      "id": "mock-prod-004",
+      "name": "Przemysłowy Robot Spawalniczy AI Laser-9000",
+      "description": "Zaawansowana stacja automatycznego spawania laserowego z sensoryką optyczną.",
+      "price": 99999.99,
+      "is_location_offer": false,
+      "is_rental": false,
+      "co2_rating": "A",
+      "in_stock": true,
+      "is_eco_friendly": true,
+      "product_image": {
+        "id": "img-04",
+        "by_name": "Testsmith",
+        "file_name": "saw01.avif",
+        "title": "Welder"
+      },
+      "category": {
+        "id": "mock-cat-01",
+        "name": "Power Tools",
+        "slug": "power-tools"
+      },
+      "brand": {
+        "id": "mock-brand-01",
+        "name": "ForgeFlex Tools"
+      }
+    }
+  ],
+  "from": 1,
+  "last_page": 1,
+  "per_page": 9,
+  "to": 4,
+  "total": 4
+}
