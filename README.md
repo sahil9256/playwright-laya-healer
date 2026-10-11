@@ -108,7 +108,6 @@ If Laya hands over, paste `test-results/heal-handoff.md` into Claude Code to run
 
 Create `env/.env.simulate.local` with `SIMULATE_UI_CHANGE=1` (renamed button, Laya fixes it) or `SIMULATE_UI_CHANGE=2` (icon-only button, goes to Claude). This changes the button in the test browser only. Run the checkout test, then `npm run heal`. Delete the file and `git checkout` the page objects afterwards.
 
-## Limits
 
 ## Limits (and how to extend them)
 
