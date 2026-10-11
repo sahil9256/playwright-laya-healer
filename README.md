@@ -6,7 +6,8 @@
 
 ## Why this is needed
 
-UI tests break for boring reasons. A developer renames a button, its `data-test` id changes, and the test fails with `waiting for getByTestId('proceed-1')`, even though nothing is broken for the user.
+UI tests break for boring reasons. A developer renames a button or reshuffles the markup, a data-test id or a CSS class changes, and the test fails with waiting for getByTestId('proceed-1'), even though nothing is broken for the user.
+The app works fine. Only the locator went stale.
 
 The AI options for fixing this all have a cost:
 
