@@ -110,10 +110,13 @@ Create `env/.env.simulate.local` with `SIMULATE_UI_CHANGE=1` (renamed button, La
 
 ## Limits
 
-- Detects `getByTestId` breakages only, for now.
-- Elements without text or a label are invisible to perception.
-- Laya's English model reads ~512 tokens, so busy pages are trimmed to 10 candidates and the right one can be cut.
-- The 0.5 confidence threshold isn't calibrated yet. A wrong answer scored 0.51 in testing and was caught by verification.
+## Limits (and how to extend them)
+
+- **Only `getByTestId` breakages are detected for now.** Other locator types (`getByRole`, `getByText`, `getByLabel`, CSS) can be handled with small framework changes: extend the failure pattern in `agent/heal.ts` to recognise them, and match them to their `@intent` note in `agent/intents.ts`. The decision part stays the same, because Laya only ever chooses between elements on the page.
+- **Only clickable elements are collected.** Inputs, dropdowns and checkboxes can be added to `agent/perception.ts` the same way.
+- **Elements without text or a label are invisible to perception.** Adding `aria-label`s to icon-only buttons fixes this, and improves accessibility too.
+- **Small context.** Laya's English model reads about 512 tokens, so busy pages are trimmed to 10 candidates and the right element can be cut. If you need more context or more candidates, switch to **Jev**: it reads about 32k–64k tokens and accepts up to 255 options per question. It uses the same API, so only `env/.env.decision.local` changes (and `MAX_OPTIONS` in `agent/decision-client.ts` can be raised). Laya's multilingual model, with up to about 8k tokens, is a free middle ground.
+
 
 ---
 
