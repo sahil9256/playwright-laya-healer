@@ -61,7 +61,7 @@ AI that edits tests has to be trusted, so the healer is built around checks.
 7. **Automatic undo.** If the test still fails, the files are restored exactly.
 8. **Rules for the fallback.** The hand-off tells Claude to change only the listed locators and, *if the app itself looks broken, to explain instead of changing the test*. Real bugs must not be "healed" away.
 9. **Human review.** Every change ends as a normal diff you read before committing.
-10. **Paid AI is opt-in.** Claude is never called automatically; you decide when a fix is worth the tokens.
+10. **Paid AI is opt-in.** Claude or any LLM-powered test agent is never called automatically; you decide when a fix is worth the tokens.
 
 ## How it works
 
